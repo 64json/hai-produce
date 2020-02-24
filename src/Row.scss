@@ -1,0 +1,23 @@
+@import './variables';
+
+.Row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+
+  .label {
+    width: 4em;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 16px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+  }
+
+  .value {
+    flex: 1;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,19 @@
+$primary-color: #FFAD1D;
+$secondary-color: #32aa39;
+$darkest-color: #2B2C3B;
+$darker-color: #2F3142;
+$dark-color: #3C3D4F;
+$font-light-color: #979AA4;
+$font-dark-color: #686A71;
+$padding: 44px;
+$card-margin: 16px;
+
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  darkestColor: $darkest-color;
+  darkerColor: $darker-color;
+  darkColor: $dark-color;
+  fontLightColor: $font-light-color;
+  fontDarkColor: $font-dark-color;
+}

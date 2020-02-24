@@ -1,0 +1,56 @@
+@import './variables';
+
+.Card {
+  background-color: $darkest-color;
+  box-shadow: 0 4px 4px rgba(black, .25);
+  border-radius: 16px;
+  margin-bottom: $card-margin;
+  margin-right: $card-margin;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+
+  .cardHeader {
+    padding: 16px 24px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: $darker-color;
+    display: flex;
+    align-items: center;
+
+    .title {
+      flex: 1;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .toggle {
+    background-image: url(./images/dots.svg);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &.overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 16px 24px;
+      z-index: 3;
+    }
+  }
+
+  .cardBody {
+    flex: 1 1;
+    margin: 16px 24px;
+    position: relative;
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,120 @@
+@import './variables.scss';
+
+.Dashboard {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  color: $font-dark-color;
+  background-color: $dark-color;
+
+  .sidebar {
+    width: 128px;
+    background-color: $darkest-color;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: $padding;
+    overflow-y: scroll;
+
+    img {
+      width: 40px;
+      height: auto;
+      margin-top: 8px;
+      margin-bottom: 36px;
+      cursor: pointer;
+
+      &.logo {
+        margin-top: 0;
+        margin-bottom: 64px;
+      }
+
+      &.settings {
+        margin-bottom: 0;
+        margin-top: auto;
+      }
+    }
+
+    .indicator {
+      margin-right: -$padding;
+      background-image: url(./images/money-ind.png);
+      background-position: top right;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .content {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 0 4px 4px rgba(black, .5);
+    overflow-y: scroll;
+
+    .header {
+      min-width: 0;
+      height: 128px;
+      background-color: $darker-color;
+      font-size: 36px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      padding: 0 $padding;
+      color: $font-light-color;
+
+      span {
+        min-width: 0;
+        flex: 1 1;
+        overflow-x: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .body {
+      flex: 1;
+      display: flex;
+      padding: $padding $padding - $card-margin $padding - $card-margin $padding;
+
+      &.notFound {
+        background-image: url(./images/error.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .mapCard {
+        .cardBody {
+          margin: 8px;
+          border-radius: 8px;
+        }
+      }
+
+      table {
+        border: none;
+        margin: -16px;
+        border-spacing: 16px;
+        width: 100%;
+
+        thead {
+          tr {
+            th {
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              white-space: nowrap;
+
+              &.number {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

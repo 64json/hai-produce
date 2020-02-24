@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: stretch;
+  font-family: 'Nunito', Arial, Sans-Serif;
+}
+
+* {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+input {
+  border: none;
+  background: none;
+  font-size: inherit;
+  font-family: inherit;
+  outline: none;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}
